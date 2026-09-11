@@ -137,7 +137,7 @@ pipeline {
                             trivy image --scanners vuln \
                             --pkg-types os \
                             --exit-code 1 \
-                            --severity HIGH,CRITICAL \
+                            --severity HIGH,MEDIUM,CRITICAL,LOW \
                             --format table ${id}.dkr.ecr.us-east-1.amazonaws.com/roboshop/catalogue:${version}
                         """,
                         returnStatus: true
