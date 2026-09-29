@@ -3,7 +3,7 @@ on: workflow_dispatch
 
 jobs:
   feature-pipeline:
-    if: github.ref_main != "main"
+    if: github.ref_main != 'main'
     uses: krishna-33s/workflows/.github/workflows/nodejs-feature-pipeline.yaml@main
     with:
       project: 'roboshop'
