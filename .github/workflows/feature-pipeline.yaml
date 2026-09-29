@@ -8,4 +8,3 @@ jobs:
     with:
       project: 'roboshop'
       component: 'catalogue'
-
